@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | JSL Socorrismo</title>
+    <meta
+      name="description"
+      content="Contacta con JSL Socorrismo para solicitar presupuesto o información. Teléfono, email y ubicación en Las Palmas de Gran Canaria."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled">
+      <div class="container">
+        <div class="navbar-inner">
+          <a href="index.html" class="nav-logo">
+            <i class="fa-solid fa-water-ladder"></i>
+            JSL
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li>
+              <a href="trabaja-con-nosotros.html">Trabaja con Nosotros</a>
+            </li>
+            <li>
+              <a href="contacto.html" class="btn btn-primary active"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <button
+            class="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>
+          Estamos disponibles para atender tu consulta o enviarte un presupuesto
+          sin compromiso.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- INFO -->
+          <div>
+            <span class="section-label">Dónde estamos</span>
+            <h2 class="section-title">Hablemos</h2>
+            <p style="color: var(--color-text-light); margin-bottom: 0.5rem">
+              Puedes contactar con nosotros por teléfono, email o a través del
+              formulario. Respondemos en menos de 24 horas laborables.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4>Dirección</h4>
+                  <p>
+                    Calle León y Castillo 28, Oficina 4<br />35003 Las Palmas de
+                    Gran Canaria<br />Islas Canarias, España
+                  </p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <div>
+                  <h4>Teléfono móvil</h4>
+                  <a href="tel:+34628457891">+34 628 457 891</a>
+                  <p style="font-size: 0.82rem; margin-top: 0.2rem">
+                    Lunes a viernes, 8:00 – 19:00 h
+                  </p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Correo electrónico</h4>
+                  <a href="mailto:info@JSLsocorrismo.es"
+                    >info@JSLsocorrismo.es</a
+                  >
+                  <p style="font-size: 0.82rem; margin-top: 0.2rem">
+                    Para consultas generales y presupuestos
+                  </p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <a
+                    href="https://wa.me/34628457891"
+                    target="_blank"
+                    rel="noopener"
+                    >+34 628 457 891</a
+                  >
+                  <p style="font-size: 0.82rem; margin-top: 0.2rem">
+                    Respuesta rápida por mensaje
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="reveal">
+            <div class="contact-form-card">
+              <h3>Envíanos un mensaje</h3>
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="nombre">Nombre y apellidos *</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre completo"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="empresa">Empresa o instalación</label>
+                  <input
+                    type="text"
+                    id="empresa"
+                    name="empresa"
+                    placeholder="Nombre del hotel, piscina, etc."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono de contacto *</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="+34 600 000 000"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tipo">Tipo de instalación *</label>
+                  <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="hotel">Hotel / Resort</option>
+                    <option value="piscina-municipal">Piscina municipal</option>
+                    <option value="comunidad">Comunidad de propietarios</option>
+                    <option value="playa">Playa / zona costera</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje *</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Cuéntanos qué necesitas: número de vasos, período de cobertura, horarios…"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%"
+                >
+                  Enviar mensaje
+                </button>
+                <div id="formFeedback" class="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">
+              <i class="fa-solid fa-water-ladder"></i>
+              JSL Socorrismo
+            </a>
+            <p>
+              Empresa especializada en servicios de socorrismo y vigilancia
+              acuática para hoteles, complejos turísticos y piscinas públicas en
+              Gran Canaria desde 2012.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li>
+                <a href="trabaja-con-nosotros.html">Trabaja con Nosotros</a>
+              </li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span
+                >Calle León y Castillo 28, Oficina 4<br />35003 Las Palmas de
+                Gran Canaria</span
+              >
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span>+34 628 457 891</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@JSLsocorrismo.es</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps?q=Calle+León+y+Castillo+Las+Palmas+de+Gran+Canaria&output=embed"
+          width="100%"
+          height="260"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación JSL"
+        >
+        </iframe>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 JSL Socorrismo. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
